@@ -4,18 +4,24 @@ Maven project to generate licenses from AMQ BOM file
 
 ## src/license
 
-licenses.xml	template XML containing complete list of product dependencies (without versions)
+### licenses.xml
 
-licenses.xsl	XSLT transformation for creating licenses.html
+template XML containing complete list of product dependencies (without versions)
 
-licenses.css	CSS file to accompany licenses.html
+### licenses.xsl
+
+XSLT transformation for creating licenses.html
+
+### licenses.css
+
+CSS file to accompany licenses.html
 
 ## pom.xml
 
-imports BOM for versions. Passes <version> to XSLT transformation
+imports BOM for versions. Passes version to XSLT transformation
 
 Requires JDK 8 to build
 
 ## Example build
 
-   $ mvn clean package -Dmaven.repo.local=$HOME/m2-mead-amq7
+mvn clean package
